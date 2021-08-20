@@ -1,0 +1,77 @@
+.game {
+  position: relative;
+  width: 100%;
+
+  @media (min-width: 600px) {
+    width: auto;
+  }
+  &__schema {
+    fill: transparent;
+    stroke: #fff;
+    stroke-width: 4px;
+    stroke-linecap: round;
+  }
+
+  &__wrong__letters {
+    position: absolute;
+    top: 5%;
+    right: 20%;
+    text-align: right;
+
+    @media (min-width: 600px) {
+      position: absolute;
+      top: 10%;
+      left: 100%;
+    }
+  }
+
+  &__wrong__letters__arr {
+    color: #9acdba;
+    opacity: 1;
+  }
+
+  &__word {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0.7rem;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #bf1363;
+  }
+
+  &__letter {
+    border-bottom: 3px solid #bf1363;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 5px;
+    font-size: 1.9rem;
+    width: 1.2rem;
+    height: 2.2rem;
+  }
+  &__popup {
+    margin: 0 20px;
+    background-color: #bf1363;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 1.5rem 2rem;
+    border-radius: 12px;
+    font-size: 14px;
+  }
+
+  &__play__btn {
+    padding: 0.75rem 1.2rem;
+    margin-top: 1.25rem;
+    border-radius: 5px;
+    border: none;
+    background-color: #fff;
+    color: #333;
+    width: max-content;
+    text-align: center;
+    align-self: center;
+    font-size: 1rem;
+  }
+}

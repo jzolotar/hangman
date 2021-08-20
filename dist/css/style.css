@@ -1,0 +1,194 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap");
+html {
+  font-size: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  line-height: 1.5;
+  font-size: 1.125rem;
+  font-family: "Roboto", sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #333;
+  color: #f4f4f4;
+  overflow: hidden;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  margin-bottom: 0;
+}
+
+.figure--part {
+  display: none;
+}
+
+.notification--container {
+  background-color: #cde6dd;
+  color: #333;
+  border-radius: 5px;
+  padding: 0 1rem;
+  position: absolute;
+  bottom: -100px;
+  -webkit-transition: -webkit-transform 0.5s ease-in-out;
+  transition: -webkit-transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
+}
+
+.popup--container {
+  background-color: rgba(131, 134, 139, 0.3);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: none;
+}
+
+.show {
+  -webkit-transform: translateY(-100px);
+          transform: translateY(-100px);
+}
+
+.game {
+  position: relative;
+  width: 100%;
+}
+
+@media (min-width: 600px) {
+  .game {
+    width: auto;
+  }
+}
+
+.game__schema {
+  fill: transparent;
+  stroke: #fff;
+  stroke-width: 4px;
+  stroke-linecap: round;
+}
+
+.game__wrong__letters {
+  position: absolute;
+  top: 5%;
+  right: 20%;
+  text-align: right;
+}
+
+@media (min-width: 600px) {
+  .game__wrong__letters {
+    position: absolute;
+    top: 10%;
+    left: 100%;
+  }
+}
+
+.game__wrong__letters__arr {
+  color: #9acdba;
+  opacity: 1;
+}
+
+.game__word {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0.7rem;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  color: #bf1363;
+}
+
+.game__letter {
+  border-bottom: 3px solid #bf1363;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0px 5px;
+  font-size: 1.9rem;
+  width: 1.2rem;
+  height: 2.2rem;
+}
+
+.game__popup {
+  margin: 0 20px;
+  background-color: #bf1363;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 1.5rem 2rem;
+  border-radius: 12px;
+  font-size: 14px;
+}
+
+.game__play__btn {
+  padding: 0.75rem 1.2rem;
+  margin-top: 1.25rem;
+  border-radius: 5px;
+  border: none;
+  background-color: #fff;
+  color: #333;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  text-align: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  font-size: 1rem;
+}
+/*# sourceMappingURL=style.css.map */

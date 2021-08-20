@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./dist/css/style.css" />
+    <title>Hangman The Game</title>
+  </head>
+  <body>
+    <h1 class="title">Hangman</h1>
+    <p>Find the secret word - Enter a letter</p>
+    <main class="game container">
+      <svg height="250" width="200" class="game__schema">
+        <!-- Rod -->
+        <line x1="60" y1="20" x2="140" y2="20" />
+        <line x1="140" y1="20" x2="140" y2="50" />
+        <line x1="60" y1="20" x2="60" y2="230" />
+        <line x1="20" y1="230" x2="100" y2="230" />
+        <!-- Head -->
+        <circle cx="140" cy="70" r="20" class="figure--part" />
+
+        <!-- Body -->
+        <line x1="140" y1="90" x2="140" y2="150" class="figure--part" />
+
+        <!-- Legs -->
+        <line x1="140" y1="150" x2="170" y2="190" class="figure--part" />
+        <line x1="140" y1="150" x2="110" y2="190" class="figure--part" />
+
+        <!-- Arms -->
+        <line x1="140" y1="100" x2="110" y2="110" class="figure--part" />
+        <line x1="140" y1="100" x2="170" y2="110" class="figure--part" />
+      </svg>
+
+      <section class="game__wrong__letters container">
+        <div class="game__wrong__letters__arr" id="wrong-letters">
+          <h4></h4>
+        </div>
+      </section>
+      <section class="game__word" id="word">
+        <!-- <span class="game__letter">W</span>
+        <span class="game__letter">W</span>
+        <span class="game__letter">W</span>
+        <span class="game__letter">W</span> -->
+      </section>
+    </main>
+
+    <div class="popup--container" id="popup-container">
+      <div class="game__popup">
+        <h2 class="game__message" id="game-message"></h2>
+        <button id="play-again" class="game__play__btn">Play Again</button>
+      </div>
+    </div>
+
+    <div class="notification--container" id="notification-container">
+      <p>You have alredy entered this letter</p>
+    </div>
+
+    <script src="/app/js/script.js"></script>
+  </body>
+</html>
