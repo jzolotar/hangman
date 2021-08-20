@@ -92,7 +92,6 @@ window.addEventListener("keydown", (e) => {
 });
 
 //reset settings
-
 function resetGame() {
   correctLetters.splice(0);
   wrongLetters.splice(0);
