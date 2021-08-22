@@ -8,7 +8,7 @@ const gameMessage = document.getElementById("game-message");
 const figureBody = document.querySelectorAll(".figure--part");
 
 //words to guess
-const words = ["test", "korus", "zwierzak", "piec"];
+const words = ["dog", "framework", "achievement", "flower"];
 
 // arrays for correct/wrong letters
 const correctLetters = [];
